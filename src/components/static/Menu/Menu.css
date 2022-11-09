@@ -1,3 +1,11 @@
-.menu-text {
-    color: #4F4F4F !important;
+.menu-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-text-nav {
+    color: black;
+    font-family: 'Inter' !important;
+    font-size: 20px !important;
+    cursor: pointer;
 }

@@ -3,7 +3,7 @@ import './Navbar.css';
 import { AppBar, Box, Grid, Toolbar, Typography } from '@material-ui/core';
 import logo from '../../../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
-import CustomizedMenus from '../Menu/Menu';
+import Menu from '../Menu/Menu';
 
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
             </Box>
         </Grid>
         <Box>
-            <CustomizedMenus />
+            <Menu />
         </Box>
     </Toolbar>
     </AppBar>

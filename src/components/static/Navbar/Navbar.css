@@ -6,6 +6,9 @@
     margin-left: 0px;
     margin-right: 0px;
     padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+    gap: 40vh;
 }
 
 .navbar-logo {
