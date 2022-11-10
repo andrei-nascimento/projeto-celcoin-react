@@ -30,7 +30,7 @@ function Home() {
                     <Typography className='menu-text'>Na Futbola você encontra tudo o que precisa para torcer para seu clube do coração 
                     </Typography>
                     <Box className='button-box-menu'>
-                        <Link to='/categorias' className='link'>
+                        <Link to='/products' className='link'>
                             <Button className='button-menu'>
                                 Nossos produtos
                             </Button>

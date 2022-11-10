@@ -5,21 +5,9 @@ import './Menu.css'
 function Menu() {
     return(
         <div className='menu-nav'>
-            <div className="camisetas">
-                <Link to='/camisetas' className='link'>
-                    <Typography className='menu-text-nav'>Camisetas</Typography>
-                </Link>
-            </div>
-            <div className="bones">
-                <Link to='/bones' className='link'>
-                    <Typography className='menu-text-nav'>Bonés</Typography>
-                </Link>
-            </div>
-            <div className="bones">
-                <Link to='acessorios' className='link'>
-                    <Typography className='menu-text-nav'>Acessórios</Typography>
-                </Link>
-            </div>
+            <Link to='/products' className='link'>
+                <Typography className='menu-text-nav'>Produtos</Typography>
+            </Link>
         </div>
     )
 }

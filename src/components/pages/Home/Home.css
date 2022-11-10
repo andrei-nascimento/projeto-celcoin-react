@@ -27,6 +27,7 @@
 .button-text {
     font-family: 'Inter' !important;
     font-size: 20px !important;
+    font-weight: 700 !important;
     background-color: #65A844 !important;
     color: white !important;
     border-radius: 40px !important;
@@ -74,6 +75,7 @@
 .button-menu {
     font-family: 'Inter' !important;
     font-size: 18px !important;
+    font-weight: 700 !important;
     background-color: #65A844 !important;
     color: white !important;
     border-radius: 40px !important;

@@ -1,9 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from "axios";
-
-import ProductDetail from '../../ProductDetail';
-
+import ProductDetail from '../../../components/ProductDetail/ProductDetail';
 import CartContext from '../../../contexts/CartContext';
 
 export default function ProductPage() {

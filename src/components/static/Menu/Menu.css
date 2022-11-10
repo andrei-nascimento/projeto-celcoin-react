@@ -1,11 +1,32 @@
 .menu-nav {
     display: flex;
     gap: 32px;
+    border: solid 3px gray;
+    border-radius: 40px;
+}
+
+.menu-nav:hover {
+    display: flex;
+    gap: 32px;
+    border: solid 3px #65A844 !important;
+    border-radius: 40px;
+    background-color: #65A844 !important;
 }
 
 .menu-text-nav {
     color: black;
     font-family: 'Inter' !important;
     font-size: 20px !important;
+    font-weight: 500 !important;
     cursor: pointer;
+    padding: 2px 12px;
+}
+
+.menu-text-nav:hover {
+    color: white !important;
+    font-family: 'Inter' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding: 2px 12px;
 }
