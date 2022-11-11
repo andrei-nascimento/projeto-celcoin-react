@@ -10,10 +10,26 @@
     margin-top: 24px
 }
 
+.delivery, .delivery-form {
+    display: grid;
+    justify-content: center;
+}
+
 .cart-form {
     display: grid;
     justify-content: center;
-    font-family: 'Inter'
+    align-items: center;
+    font-family: 'Inter';
+}
+
+.label-cart {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 16px
+}
+
+.input-cart {
+    width: 50vh;
 }
 
 .items-titulo {

@@ -10,6 +10,7 @@ import CartContext from "../../contexts/CartContext";
 function Products() {
     const [productsList, setProductsList] = useState(null);
     const { cart } = useContext(CartContext);
+    const [ busca, setBusca ] = useState('');
 
     useEffect(() => {
         const promise = axios.get(`${process.env.REACT_APP_BACKEND_URL}/products`);
@@ -41,10 +42,18 @@ function Products() {
     }
 
     const products = buildProductsList();
+    
     return (
-        <div className="Products">
-            {products}
-        </div>
+        <>
+            <div className="busca">
+                <label className="busca-text">Pesquisar:
+                <input type="text" className="busca-input" value={busca} onChange={(e) => setBusca(e.target.value)}/>
+                </label>
+            </div>
+            <div className="Products">
+                {products}
+            </div>
+        </>
     )
 }
 

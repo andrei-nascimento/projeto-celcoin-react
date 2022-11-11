@@ -6,3 +6,23 @@
     margin-top: 32px;
 }
 
+.busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 72px;
+}
+
+.busca-text {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.busca-input {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    padding: 4px
+}
