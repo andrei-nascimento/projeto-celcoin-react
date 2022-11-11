@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import ProductDetail from '../../../components/ProductDetail/ProductDetail';
 import CartContext from '../../../contexts/CartContext';
+import './ProductPage.css';
 
 export default function ProductPage() {
     const params = useParams();
@@ -19,7 +20,7 @@ export default function ProductPage() {
     }, []);
 
     function handleBack() {
-        navigate("/");
+        navigate("/products");
     }
 
     function addProductOnCart() {
@@ -43,17 +44,18 @@ export default function ProductPage() {
         <div className="ProductPage">
             {
                 product ?
-                <ProductDetail
+                <ProductDetail className='ProductPageItens'
+                    photo={product.photo}
                     title={product.title}
-                    description={product.description}
+                    category={product.category}
                     price={product.price}
                 /> :
                 <div>Não há nada para exibir</div>
             }
             <div className="actions">
-                <button onClick={handleBack}>Voltar</button>
-                <button onClick={addProductOnCart}>{
-                product && !isProductAlreadySelected() ? <>Selecionar</> : <>Remover</>
+                <button onClick={handleBack} className="return">Voltar</button>
+                <button onClick={addProductOnCart} className="add-to-cart">{
+                product && !isProductAlreadySelected() ? <>Adicionar</> : <>Remover</>
                 }</button>
             </div>
         </div>

@@ -7,6 +7,7 @@ import CartContext from '../../contexts/CartContext'
 import CheckoutPage from '../pages/Checkout/Checkout';
 import { useState } from 'react';
 import ProductPage from '../pages/ProductPage/ProductPage';
+import Products from '../Products/Products';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -16,14 +17,13 @@ function App() {
       <div className='App'>
         <BrowserRouter>
           <Navbar />
-            <div style={{ minHeight: "100vh" }}>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/home' element={<Home />} />
+                <Route path='/products' element={<Products />} />
                 <Route path="/products/:productId" element={<ProductPage />} />
                 <Route path="/checkout" element={<CheckoutPage />} />
               </Routes>
-            </div>
           <Footer />
         </BrowserRouter>
       </div>

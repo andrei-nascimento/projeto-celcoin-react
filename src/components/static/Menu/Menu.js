@@ -4,10 +4,15 @@ import './Menu.css'
 
 function Menu() {
     return(
-        <div className='menu-nav'>
-            <Link to='/products' className='link'>
-                <Typography className='menu-text-nav'>Produtos</Typography>
-            </Link>
+        <div className="display-nav">
+            <div className='menu-nav'>
+                <Link to='/products' className='link'>
+                    <Typography className='menu-text-nav'>Produtos</Typography>
+                </Link>
+                <Link to='/checkout' className='link'>
+                    <Typography className='menu-text-nav'>Checkout</Typography>
+                </Link>
+            </div>
         </div>
     )
 }

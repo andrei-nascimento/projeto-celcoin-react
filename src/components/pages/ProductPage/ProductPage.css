@@ -1,0 +1,38 @@
+.ProductPage {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 48px
+}
+
+.return {
+    font-family: 'Inter' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: white !important;
+    color: #65A844 !important;
+    border-radius: 40px  !important;
+    width: 20vh;
+    border-color: #65A844;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    font-family: 'Inter' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: #65A844 !important;
+    color: white !important;
+    border-radius: 40px  !important;
+    width: 20vh;
+    border-color: #65A844;
+    margin: 20px;
+    cursor: pointer;
+}

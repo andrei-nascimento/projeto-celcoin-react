@@ -2,9 +2,9 @@ import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 
 import "./Products.css";
-//import Loading from "../../assets/loading.gif";
+import Loading from "../../assets/loading.gif";
 
-import Product from "../Product";
+import Product from "../Product/Product";
 import CartContext from "../../contexts/CartContext";
 
 function Products() {
@@ -12,7 +12,7 @@ function Products() {
     const { cart } = useContext(CartContext);
 
     useEffect(() => {
-        const promise = axios.get(`${process.env.REACT_APP_BACKEND_URI}/products`);
+        const promise = axios.get(`${process.env.REACT_APP_BACKEND_URL}/products`);
         promise.then(response => {
             setProductsList(response.data);
         });
@@ -29,10 +29,10 @@ function Products() {
         return productsList.map(product => {
         return (
             <Product
-                key={product.title}
                 id={product.id}
                 title={product.title}
-                description={product.description}
+                photo={product.photo}
+                category={product.category}
                 price={product.price}
                 selected={cart.find(productOnCart => productOnCart.id === product.id)}
             />

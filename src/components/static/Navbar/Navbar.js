@@ -23,7 +23,7 @@ function Navbar() {
                 </Box>
             </Box>
         </Grid>
-        <Box>
+        <Box className='pages-navbar'>
             <Menu />
         </Box>
     </Toolbar>

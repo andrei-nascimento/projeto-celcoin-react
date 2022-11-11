@@ -1,5 +1,6 @@
 .navbar {
     background: white !important;
+    display: flex;
 }
 
 .toolbar {
@@ -9,11 +10,17 @@
     justify-content: center;
     align-items: center;
     gap: 40%;
+    display: flex;
 }
 
 .navbar-logo {
     margin: 0;
     width: 42px;
+
+}
+
+.pages-navbar {
+    display: flex;
 
 }
 
@@ -38,8 +45,4 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-}
-
-.hamburguer-menu {
-    color: black !important;
 }

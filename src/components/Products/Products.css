@@ -1,0 +1,8 @@
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 40px;
+    margin-top: 32px;
+}
+

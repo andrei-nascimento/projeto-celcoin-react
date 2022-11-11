@@ -1,0 +1,29 @@
+.ProductDetail .product {
+    display: grid;
+    justify-content: center;
+}
+
+.title-product {
+    margin-bottom: 0px
+}
+
+.category-product {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.ProductDetail .product-info .photo-product {
+    width: 50vh;
+    margin-right: 24px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-product {
+    font-size: 28px;
+}

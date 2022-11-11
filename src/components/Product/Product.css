@@ -1,0 +1,35 @@
+.Product .product {
+    padding: 10px;
+    margin: 12px;
+    margin-bottom: 20px;
+}
+
+.Product .product:hover {
+    cursor: pointer;
+}
+
+.Product .selected {
+    border: 1px solid #65A844;
+}
+
+.Product .photo {
+    width: 50vh;
+}
+
+.Product .title {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Product .price {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Product .category {
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #65A844
+}
