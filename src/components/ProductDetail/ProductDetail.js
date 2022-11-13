@@ -1,8 +1,6 @@
 import './ProductDetail.css';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useEffect, useState, useContext } from 'react';
-import CartContext from '../../contexts/CartContext';
+import { useState } from 'react';
 
 
 function ProductDetail(props) {
@@ -10,13 +8,13 @@ function ProductDetail(props) {
     const [quant, setQuant] = useState(0);
     const [product, setProduct] = useState(null);
 
-    function addProduct() {
-        setQuant(quant+1);
-    }
+    // function addProduct() {
+    //     setQuant(quant+1);
+    // }
 
-    function subProduct() {
-        setQuant(quant-1);
-    }
+    // function subProduct() {
+    //     setQuant(quant-1);
+    // }
 
     return (
         <div className="ProductDetail">

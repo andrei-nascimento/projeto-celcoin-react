@@ -5,10 +5,6 @@ import { useForm } from "react-hook-form";
 
 export default function CheckoutPage() {
     const { cart } = useContext(CartContext);
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [date, setDate] = useState("");
-    const [address, setAddress] = useState("");
     const { register, handleSubmit, setValue, setFocus } = useForm();
 
     const checkCEP = (e) => {
