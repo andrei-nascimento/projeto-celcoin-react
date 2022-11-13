@@ -1,20 +1,9 @@
 import './ProductDetail.css';
 import React from 'react';
-import { useState } from 'react';
 
 
 function ProductDetail(props) {
     const { title, price, category, photo } = props;
-    const [quant, setQuant] = useState(0);
-    const [product, setProduct] = useState(null);
-
-    // function addProduct() {
-    //     setQuant(quant+1);
-    // }
-
-    // function subProduct() {
-    //     setQuant(quant-1);
-    // }
 
     return (
         <div className="ProductDetail">

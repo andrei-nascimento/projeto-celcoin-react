@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import CartContext from "../../../contexts/CartContext"
 import "./Checkout.css";
 import { useForm } from "react-hook-form";
@@ -36,9 +36,6 @@ export default function CheckoutPage() {
                         : "Não há itens selecionados"
                     }
                 </ul>
-                {cart.map((product) => {
-                    
-                })}
             </div>
             <div className="delivery">
                 <h1 className="items-titulo">Dados para Entrega</h1>
