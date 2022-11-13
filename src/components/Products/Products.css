@@ -16,13 +16,16 @@
 
 .busca-text {
     font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .busca-input {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
-    padding: 4px
+    padding: 4px;
+    border-radius: 40px;
+    border-color: #65A844;
+    margin-left: 8px
 }

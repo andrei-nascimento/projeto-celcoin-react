@@ -1,5 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import KeyboardReturnIcon from '@material-ui/icons/KeyboardReturn';
 import axios from "axios";
 import ProductDetail from '../../../components/ProductDetail/ProductDetail';
 import CartContext from '../../../contexts/CartContext';
@@ -53,10 +55,13 @@ export default function ProductPage() {
                 <div>Não há nada para exibir</div>
             }
             <div className="actions">
-                <button onClick={handleBack} className="return">Voltar</button>
+                <button onClick={handleBack} className="return"><KeyboardReturnIcon style={{ fontSize: 32 }}/></button>
                 <button onClick={addProductOnCart} className="add-to-cart">{
                 product && !isProductAlreadySelected() ? <>Adicionar</> : <>Remover</>
                 }</button>
+                <Link to="/checkout">
+                <button className="link-cart">Finalizar Compra</button>
+                </Link>
             </div>
         </div>
     )

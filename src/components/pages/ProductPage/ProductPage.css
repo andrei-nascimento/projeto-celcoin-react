@@ -12,6 +12,21 @@
 }
 
 .return {
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-family: 'Inter' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: white !important;
+    color: #65A844 !important;
+    width: 20vh;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart {
     font-family: 'Inter' !important;
     font-size: 20px !important;
     font-weight: 500 !important;
@@ -24,15 +39,16 @@
     cursor: pointer;
 }
 
-.add-to-cart {
+.link-cart {
     font-family: 'Inter' !important;
     font-size: 20px !important;
     font-weight: 500 !important;
     background-color: #65A844 !important;
     color: white !important;
     border-radius: 40px  !important;
-    width: 20vh;
+    width: 32vh;
+    height: 5vh;
     border-color: #65A844;
     margin: 20px;
-    cursor: pointer;
+    cursor: pointer; 
 }

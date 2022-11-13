@@ -1,5 +1,6 @@
 import './ProductDetail.css';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import CartContext from '../../contexts/CartContext';
 

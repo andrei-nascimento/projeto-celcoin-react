@@ -28,25 +28,20 @@ export default function CheckoutPage() {
 
     return (
         <div className="CheckOutPage">
-            <div className="resumo">
-                <h1 className="items-titulo">Resumo da Compra</h1>
+            <div className="items">
+                <h1 className="items-titulo">Itens Selecionados</h1>
                 <ul>
                     {cart.length > 0
-                        ? cart.map(product => <li>{product.title} - R$ {product.price.toFixed(2)}</li>)
+                        ? cart.map(product => <div key={product.id} className="items-detail">
+                        <img src={product.photo} alt="imagem do produto" className="cart-photo"/>
+                        <h2 className="item-titulo-h2">{product.title}</h2>
+                        <p className="total">Total: R$ {parseInt(product.price).toFixed(2).replace(".", ",")}</p>
+                    </div>)
                         : "Não há itens selecionados"
                     }
                 </ul>
-            </div>
-            <div className="items">
-                <h1 className="items-titulo">Itens Selecionados</h1>
-                {cart.map((product, quant) => {
-                    return (
-                        <div key={product.id} className="items-detail">
-                            <img src={product.photo} alt="imagem do produto" className="cart-photo"/>
-                            <h2 className="item-titulo-h2">{product.title}</h2>
-                            <p className="total">Total: R$ {parseInt(product.price).toFixed(2).replace(".", ",")}</p>
-                        </div>
-                    )
+                {cart.map((product) => {
+                    
                 })}
             </div>
             <div className="delivery">

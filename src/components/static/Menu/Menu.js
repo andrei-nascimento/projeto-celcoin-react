@@ -1,5 +1,6 @@
-import { Typography } from "@material-ui/core";
+import { Icon, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import './Menu.css'
 
 function Menu() {
@@ -10,7 +11,7 @@ function Menu() {
                     <Typography className='menu-text-nav'>Produtos</Typography>
                 </Link>
                 <Link to='/checkout' className='link'>
-                    <Typography className='menu-text-nav'>Checkout</Typography>
+                    <Icon className='menu-icon'><ShoppingCartIcon /></Icon>
                 </Link>
             </div>
         </div>

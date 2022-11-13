@@ -6,12 +6,11 @@
 
 .menu-nav {
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 
 .menu-nav:hover {
     display: flex;
-    gap: 32px;
     border-radius: 40px;
 }
 
@@ -22,7 +21,7 @@
     font-weight: 500 !important;
     cursor: pointer;
     padding: 2px 12px;
-    border: solid 1px gray;
+    border: solid 1px #65A844;
     border-radius: 40px;
 }
 
@@ -33,5 +32,10 @@
     font-weight: 500 !important;
     cursor: pointer;
     padding: 2px 12px;
+    border: solid 1px #65A844;
     background-color: #65A844 !important;
+}
+
+.menu-icon {
+    color: #65A844 !important
 }
