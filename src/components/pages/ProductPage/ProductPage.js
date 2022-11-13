@@ -19,6 +19,8 @@ export default function ProductPage() {
         const promise = axios.get(`${url}/products/${params.productId}`);
         promise.then(response => setProduct(response.data));
         promise.catch(error => console.log("error", error));
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     function handleBack() {
