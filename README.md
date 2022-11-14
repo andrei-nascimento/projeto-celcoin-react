@@ -1,4 +1,4 @@
-# Futbola
+# Futbola ⚽
 
 O Futbola é um projeto desenvolvido como tarefa final de uma especialização na biblioteca React com Javascript.
 
